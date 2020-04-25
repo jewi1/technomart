@@ -6,6 +6,13 @@ body {
     color: #000000;
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -17,35 +24,51 @@ body {
 	overflow: hidden;
 }
 
+.main-header {
+    margin-bottom: 60px;
+}
+
 .header-navigation-wrapper {
     background-color: #293449;
+    min-height: 50px;
 }
 
 .site-navigation {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .site-navigation-title {
+    display: block;
     font-size: 24px;
     line-height: 24px;
     color: #ffffff;
     background-color: #ee3643;
     text-decoration: none;
     text-transform: uppercase;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    align-self: center;
 }
 
-.site-navigation-search {
+.site-navigation-search input {
     background-color: #293449;
     border: none;
     font: inherit;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
+    height: 50px;
+    padding-left: 50px;
+    width: 270px;
+    box-sizing: border-box;
 }
 
-.site-navigation-search::placeholder {
+.site-navigation-search input::placeholder {
     font: inherit;
     font-size: 17px;
     line-height: 18px;
@@ -53,29 +76,49 @@ body {
 }
 
 .navigaion-bookmark {
+    display: block;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     text-decoration: none;
+    padding-left: 44px;
+    padding-right: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .navigaion-cart {
+    display: block;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     text-decoration: none;
+    padding-left: 50px;
+    padding-right: 31px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .navigation-order {
+    display: block;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
     background-color: #63a63e;
     text-decoration: none;
+    padding-left: 29.61px;
+    padding-right: 29.61px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-bottom-wrapper {
     background-color: #f4f7f9;
+}
+
+.header-bottom-wrapper .container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header-company-info {
@@ -83,6 +126,11 @@ body {
     line-height: 23px;
     font-style: italic;
     color: #ee3643;
+    margin-left: 53px;
+}
+
+.header-company-center {
+    margin-left: 71px;
 }
 
 .header-company-center p:first-child {
@@ -90,12 +138,25 @@ body {
     line-height: 21px;
     color: #ee3643;
     border: 3px solid #ffffff;
+    width: 264px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .header-company-center p:last-child {
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.header-bottom-buttons {
+    margin-left: 69px;
+    margin-top: 21px;
 }
 
 .entrance-button {
@@ -104,6 +165,10 @@ body {
     color: #000000;
     border: none;
     background-color: #ffffff;
+    width: 120px;
+    min-height: 45px;
+    padding-left: 48px;
+    margin-right: 10px;
 }
 
 .registration-button {
@@ -112,13 +177,22 @@ body {
     color: #000000;
     border: none;
     background-color: #ffffff;
+    width: 167px;
+    min-height: 45px;
 }
 
 .h-bottom-list {
     background-color: #32425c;
+    width: 960px;
+    height: 55px;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .h-bottom-item a {
@@ -128,15 +202,29 @@ body {
     text-decoration: none;
 }
 
+.slider {
+    display: flex;
+    margin-bottom: 53px;
+}
+
+.main-slider-left {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .materials {
     background-color: #ffbf47;
     color: #ffffff;
+    width: 300px;
+    height: 123px;
+    margin-right: 20px;
 }
 
 .materials h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    margin-left: 23px;
 }
 
 .materials a {
@@ -146,17 +234,26 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #e5ac40;
+    margin-left: 23px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 3px;
 }
 
 .instruments {
     background-color: #3bbce3;
     color: #ffffff;
+    width: 300px;
+    height: 123px;
 }
 
 .instruments h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    margin-left: 23px;
 }
 
 .instruments a {
@@ -166,33 +263,142 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #35a9cc;
+    margin-left: 23px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 3px;
+}
+
+.slides {
+    margin-top: 20px;
+    width: 620px;
+    height: 266px;
+    position: relative;
 }
 
 .slides input[name="toggle"] {
     display: none;
 }
 
+.slide {
+    height: 266px;
+    display: none;
+}
+
+.slider-controls {
+    width: 30px;
+    height: 12px;
+    position: absolute;
+    top: 220px;
+    left: 295px;
+}
+
+.slider-controls label {
+    position: absolute;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.slider-controls label[for="btn-2"] {
+    left: 20px;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+    background-color: #ff0000;
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+    background-color: #ff0000;
+
+}
+
 .slide h3 {
+    margin: 0;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
     color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 26px;
+    padding-top: 27px;
 }
 
 .slide p {
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
+    margin: 0;
+    padding-left: 26px;
 }
 
 .slide a {
-    font: 14px;
+    display: inline-block;
+    font-size: 14px;
     line-height: 18px;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #ee3643;
+    margin-top: 120px;
+    margin-left: 25px;
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
 }
+
+.arrow-left::before,
+.arrow-left::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    top: 133px;
+    left: 25px;
+    cursor: pointer;
+}
+
+.arrow-left::before {
+    transform: rotate(-45deg);
+    top: 130px;
+}
+
+.arrow-left::after {
+    transform: rotate(45deg);
+    top: 142px;
+}
+
+.arrow-right::before,
+.arrow-right::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    background-color: #ffffff;
+    top: 133px;
+    left: 578px;
+    cursor: pointer;
+}
+
+.arrow-right::before {
+    transform: rotate(45deg);
+    top: 130px;
+}
+
+.arrow-right::after {
+    transform: rotate(-45deg);
+    top: 142px;
+}
+
 
 .first-slide {
     background-image: url(../img/slider-bg-1.jpg);
@@ -204,15 +410,32 @@ body {
     background-repeat: no-repeat;
 }
 
+.main-slider-right {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-1:checked ~ #slide-1,
+#btn-2:checked ~ #slide-2 {
+    display: block;
+}
+
 .technic {
     background-color: #dc91d8;
     color: #ffffff;
+    width: 300px;
+    height: 123px;
+    margin-bottom: 20px;
 }
 
 .technic h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 23px;
 }
 
 .technic a {
@@ -222,17 +445,30 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #c682c2;
+    margin-left: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 3px;
 }
 
 .discounts {
     background-color: #8ed78f;
     color: #ffffff;
+    width: 300px;
+    height: 123px;
+    margin-bottom: 20px;
 }
 
 .discounts h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 23px;
 }
 
 .discounts a {
@@ -242,17 +478,29 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #80c180;
+    margin-left: 23px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 3px;
 }
 
 .delivery {
     background-color: #ffc047;
     color: #ffffff;
+    width: 300px;
+    height: 123px;
 }
 
 .delivery h3 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 23px;
 }
 
 .delivery a {
@@ -262,16 +510,25 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #e5ac40;
+    margin-left: 23px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 3px;
 }
 
 .products-hits-title {
     background-color: #f9f5f0;
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .products-hits-title h2 {
     font-size: 30px;
     line-height: 30px;
     color: #32425c;
+    margin-left: 30px;
 }
 
 .products-hits-title a {
@@ -281,25 +538,39 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #ee3643;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    align-self: center;
+    margin-left: 373px;
+    border-radius: 3pxАП;
 }
 
 .products-hits-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .products-hits-list li {
     border: 1px solid #eaeaea;
+    width: 220px;
+    min-height: 318px;
 }
 
 .product-action-buy {
+    display: inline-block;
+    text-align: center;
     color: #ffffff;
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #63a63e;
+    width: 135px;
 }
 
 .product-action-bookmark {
