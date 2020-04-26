@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 960px;
+    width: 970px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -1570,3 +1570,4 @@ body {
     border-bottom: none;
     color: #ee3643;
 }
+
